@@ -130,6 +130,13 @@ a { color: inherit; text-decoration: none; }
 .text-link:hover { gap: 13px; }
 
 .gallery { background: var(--ink); color: var(--paper); }
+.service-gallery-block {
+  display: none;
+}
+
+.service-gallery-block.active {
+  display: block;
+}
 .gallery .eyebrow { color: #d59574; }
 .gallery .section-intro { color: rgba(251,249,245,.62); }
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 285px; gap: 12px; }
