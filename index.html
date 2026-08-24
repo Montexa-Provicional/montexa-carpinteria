@@ -335,7 +335,7 @@
 <footer class="footer"><div class="container"><div class="footer-top"><div><a class="brand" href="#inicio"><img class="brand-logo" src="images/logo-montexa.jpg" alt="Montexa Carpintería & Montajes"></a><p class="footer-tag">Carpintería y montajes para viviendas, con atención al detalle y a los acabados.</p></div><div class="footer-columns"><div class="footer-column"><h3>Secciones</h3><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#muestras">Muestras</a></div><div class="footer-column"><h3>Contacto</h3><a href="tel:+34674913937">674 91 39 37</a><a href="https://wa.me/message/PLADOOA5EE4SP1" target="_blank" rel="noopener">WhatsApp +34</a><a href="mailto:harold.anyosa.tapia@gmail.com">harold.anyosa.tapia@gmail.com</a><a href="https://www.linkedin.com/in/harold-anyosa-tapia-13aba234a" target="_blank" rel="noopener">LinkedIn</a></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> Montexa Carpintería & Montajes</span><span>Carpintería y montajes</span></div></div></footer>
 </main>
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada" hidden><button class="lightbox-close" id="lightbox-close" type="button" aria-label="Cerrar imagen">×</button><img id="lightbox-image" src="" alt=""><div class="lightbox-caption" id="lightbox-caption"></div></div>
-  <script>
+<script>
 function showServiceGallery(id) {
   document.querySelectorAll('.service-gallery-block').forEach(function(gallery) {
     gallery.classList.remove('active');
@@ -345,14 +345,16 @@ function showServiceGallery(id) {
 
   if (gallery) {
     gallery.classList.add('active');
-
-    setTimeout(function() {
-      gallery.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }, 50);
+    document.body.style.overflow = 'hidden';
   }
+}
+
+function closeServiceGallery() {
+  document.querySelectorAll('.service-gallery-block').forEach(function(gallery) {
+    gallery.classList.remove('active');
+  });
+
+  document.body.style.overflow = '';
 }
 </script>
 
