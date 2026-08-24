@@ -130,6 +130,14 @@ a { color: inherit; text-decoration: none; }
 .text-link:hover { gap: 13px; }
 
 .gallery { background: var(--ink); color: var(--paper); }
+
+.service-gallery-block {
+  display: none;
+}
+
+.service-gallery-block.active {
+  display: block;
+}
 .service-gallery-block {
   display: none;
 }
