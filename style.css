@@ -133,17 +133,17 @@ a { color: inherit; text-decoration: none; }
 
 .service-gallery-block {
   display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(20, 18, 15, 0.96);
+  overflow-y: auto;
+  padding: 60px 30px 40px;
 }
 
 .service-gallery-block.active {
   display: block;
 }
-.service-gallery-block {
-  display: none;
-}
-
-.service-gallery-block.active {
-  display: block;
 }
 .gallery .eyebrow { color: #d59574; }
 .gallery .section-intro { color: rgba(251,249,245,.62); }
