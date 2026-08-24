@@ -215,7 +215,7 @@ a { color: inherit; text-decoration: none; }
 .footer-column a:hover { color: var(--clay-dark); }
 .footer-bottom { display: flex; justify-content: space-between; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink-soft); font-family: var(--mono); font-size: 9px; letter-spacing: .06em; text-transform: uppercase; }
 .lightbox[hidden] { display: none !important; }
-.lightbox { position: fixed; z-index: 50; inset: 0; display: grid; place-items: center; padding: 25px; background: rgba(26,22,19,.93); animation: fade-in .2s ease both; }
+.lightbox { position: fixed; z-index: 10000; inset: 0; display: grid; place-items: center; padding: 25px; background: rgba(26,22,19,.93); animation: fade-in .2s ease both; }
 .lightbox img { max-width: min(100%, 1080px); max-height: 84vh; object-fit: contain; }
 .lightbox-caption { position: absolute; bottom: 22px; left: 25px; color: var(--paper); font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
 .lightbox-close { position: absolute; top: 20px; right: 24px; width: 43px; height: 43px; border: 1px solid rgba(251,249,245,.5); color: var(--paper); background: transparent; display: grid; place-items: center; cursor: pointer; }
