@@ -236,7 +236,7 @@ a { color: inherit; text-decoration: none; }
   .contact-form-wrap { max-width: 680px; }
 }
 @media (max-width: 680px) {
-  .brand-logo { width: 58px; height: 48px; }
+.brand-logo { width: 68px; height: 68px; }
   .container, .hero-content, .nav-inner { width: calc(100% - 36px); }
   .nav-inner { height: 70px; }
   .site-header .nav-cta { display: none; }
